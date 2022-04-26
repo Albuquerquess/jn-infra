@@ -4,6 +4,8 @@ resource "aws_instance" "orcamento_express_dev" {
   subnet_id                   = aws_subnet.jn_dev_public.id
   associate_public_ip_address = true
   security_groups             = [aws_security_group.allow_ssh_https.id]
+
+  user_data = "${file("${path.root}/script/installDocker.sh")}"
   tags = {
     Name     = "orçamento Express DEV"
     resource = "EC2"
