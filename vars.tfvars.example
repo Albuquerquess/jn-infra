@@ -1,0 +1,30 @@
+# # # # # ENV # # # # # 
+
+aws_default_tags = ""
+  Name        = ""
+  Environment = ""
+  Owner       = ""
+  MananedBy   = ""
+}
+
+current_environment = ""
+
+aws_profile = ""
+
+aws_region = ""
+
+# # # # # EC2 # # # # # 
+
+aws_ami = ""
+
+aws_instance_type = ""
+
+aws_subnet_public_cidr_block = ""
+
+aws_subnet_private_cidr_block = ""
+
+# # # # # VPC # # # # # 
+
+aws_vpc_cird_block = ""
+
+aws_vpc_enable_dns_hostnames = ""
